@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="awal" id="home">
+        <div class="flex flex-row">
+            <div class="w-2/12 bg-slate-200 h-screen menu transition duration-200 ease-in-out" id="menu">
+                <div class="flex flex-col transition duration-200 ease-in-out subMenu relative md:static bg-white h-screen z-10" id="subMenu">
+                    <div class="flex flex-row lg:justify-center justify-between items-center mx-2 my-4">
+                        <div class="flex justify-center items-center flex-col">
+                            <img src="/img/logo.png" class="h-12 w-12">
+                            <h1 class="font-poppins text-cyan-500 text-xs">Extrade</h1>
+                        </div>
+                        <div class="lg:hidden cursor-pointer" id="closeBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-500 font-poppins" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-8">
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Dashboard</h1>
+                        </div>
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Customer</h1>
+                        </div>
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Orders</h1>
+                        </div>
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Analytics</h1>
+                        </div>
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z" clip-rule="evenodd" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Messages</h1>
+                        </div>
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Products</h1>
+                        </div>
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.05 3.636a1 1 0 010 1.414 7 7 0 000 9.9 1 1 0 11-1.414 1.414 9 9 0 010-12.728 1 1 0 011.414 0zm9.9 0a1 1 0 011.414 0 9 9 0 010 12.728 1 1 0 11-1.414-1.414 7 7 0 000-9.9 1 1 0 010-1.414zM7.879 6.464a1 1 0 010 1.414 3 3 0 000 4.243 1 1 0 11-1.415 1.414 5 5 0 010-7.07 1 1 0 011.415 0zm4.242 0a1 1 0 011.415 0 5 5 0 010 7.072 1 1 0 01-1.415-1.415 3 3 0 000-4.242 1 1 0 010-1.415zM10 9a1 1 0 011 1v.01a1 1 0 11-2 0V10a1 1 0 011-1z" clip-rule="evenodd" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Reports</h1>
+                        </div>
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Settings</h1>
+                        </div>
+                        <div class="flex flex-row pl-4 items-center hover:bg-slate-500 py-4 hover:border-l-4 hover:border-cyan-500 hover:text-white text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm">Add Products</h1>
+                        </div>
+                    </div>
+                    <div class="flex mt-68">
+                        <div class="flex flex-row pl-4 items-center hover:text-red-500 text-cyan-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd" />
+                            </svg>
+                            <h1 class="pl-2 font-poppins text-sm "><a href="#">Logout</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-7/12 h-screen bg-slate-200 drop-shadow-lg">
+                <div>
+                    <h1 class="font-poppins text-2xl font-bold mt-8 ml-4">Dashboard</h1>
+                    <input type="date" class="font-poppins text-sm rounded ml-4 mt-2 mb-8 px-2">
+                </div>
+                <div class="flex flex-row col-span-3 flex-wrap gap-4 justify-center ">
+                    <div class="bg-white drop-shadow-lg w-88 h-44 rounded-lg flex flex-row">
+                        <div class="w-1/2">
+                            <div class="flex mt-4 ml-4 flex-col ">
+                                <div class="bg-cyan-500 w-8 h-8 rounded-full text-white flex justify-center items-center m">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <h1 class="font-poppins text-xs font-semibold mt-2">Total Sales</h1>
+                                <h1 class="font-poppins text-2xl font-bold mt-6 mr-4 text-cyan-500">$22.100</h1>
+                                <h1 class="font-poppins text-xs font-light mt-6">Last 24 Hours </h1>
+                            </div>
+                        </div>
+                        <div class="w-1/2 justify-center flex flex-row items-center">
+                            <div class="flex flex-row mt-4">
+                                <div class="relative">
+                                    <svg width="250" height="250">
+                                        <circle r="40" cx="125" cy="125" class="track"></circle>
+                                        <circle r="40" cx="125" cy="125" class="progress"></circle>
+                                    </svg>
+                                    <h1 class="font-poppins absolute bottom-28 right-24 text-2xl font-bold">81%</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white drop-shadow-lg w-88 h-44 rounded-lg flex flex-row">
+                        <div class="w-1/2">
+                            <div class="flex mt-4 ml-4 flex-col ">
+                                <div class="bg-cyan-500 w-8 h-8 rounded-full text-white flex justify-center items-center m">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                                    </svg>
+                                </div>
+                                <h1 class="font-poppins text-xs font-semibold mt-2">Total Expenses</h1>
+                                <h1 class="font-poppins text-2xl font-bold mt-6 mr-4 text-cyan-500">$14.503</h1>
+                                <h1 class="font-poppins text-xs font-light mt-6">Last 24 Hours </h1>
+                            </div>
+                        </div>
+                        <div class="w-1/2 justify-center flex flex-row items-center">
+                            <div class="flex flex-row mt-4">
+                                <div class="relative">
+                                    <svg width="250" height="250">
+                                        <circle r="40" cx="125" cy="125" class="track"></circle>
+                                        <circle r="40" cx="125" cy="125" class="progress2"></circle>
+                                    </svg>
+                                    <h1 class="font-poppins absolute bottom-28 right-24 text-2xl font-bold">63%</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white drop-shadow-lg w-88 h-44 rounded-lg flex flex-row">
+                        <div class="w-1/2">
+                            <div class="flex mt-4 ml-4 flex-col ">
+                                <div class="bg-cyan-500 w-8 h-8 rounded-full text-white flex justify-center items-center m">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <h1 class="font-poppins text-xs font-semibold mt-2">Total Income</h1>
+                                <h1 class="font-poppins text-2xl font-bold mt-6 mr-4 text-cyan-500">$12.120</h1>
+                                <h1 class="font-poppins text-xs font-light mt-6">Last 24 Hours </h1>
+                            </div>
+                        </div>
+                        <div class="w-1/2 justify-center flex flex-row items-center">
+                            <div class="flex flex-row mt-4">
+                                <div class="relative">
+                                    <svg width="250" height="250">
+                                        <circle r="40" cx="125" cy="125" class="track"></circle>
+                                        <circle r="40" cx="125" cy="125" class="progress3"></circle>
+                                    </svg>
+                                    <h1 class="font-poppins absolute bottom-28 right-24 text-2xl font-bold">41%</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="ml-4 mt-8">
+                        <h1 class="font-poppins font-semibold text-lg">Recent Orders</h1>
+                    </div>
+                    <div class="bg-white drop-shadow-lg w-auto rounded-lg h-auto pt-8 pb-4 mx-4">
+                        <table class="w-11/12 mx-auto font-poppins">
+                            <thead class=" text-center">
+                                <tr class="space-x-4 text-center">
+                                    <th >Product Name</th>
+                                    <th >Product Number</th>
+                                    <th >Payment</th>
+                                    <th >Status</th>
+                                    <th ></th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm border-b-2 text-center">
+                                <tr class="border-b-2 ">
+                                    <td class="pt-4">Foldable Mini Drone</td>
+                                    <td class="pt-4">1244125</td>
+                                    <td class="pt-4">Due</td>
+                                    <td class="text-yellow-600 pt-4">Pending</td>
+                                    <td ><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">Lavender Drone K2</td>
+                                    <td class="pt-4">35234125</td>
+                                    <td class="pt-4">Paid</td>
+                                    <td class="pt-4">Delivered</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">DJI Mavic Air 2</td>
+                                    <td class="pt-4">544125</td>
+                                    <td class="pt-4">Refunded</td>
+                                    <td class="pt-4 text-red-600">Declined</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">Iphone 13 Pro Max </td>
+                                    <td class="pt-4">215415</td>
+                                    <td class="pt-4">Due</td>
+                                    <td class="pt-4 text-yellow-600">Pending</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">Oppo F7</td>
+                                    <td class="pt-4">2342325</td>
+                                    <td class="pt-4">Paid</td>
+                                    <td class="pt-4">Delivered</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">MacBook Pro 2020</td>
+                                    <td class="pt-4">544125</td>
+                                    <td class="pt-4">Refunded</td>
+                                    <td class="pt-4 text-red-600">Declined</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">Ipad Mini 2018 </td>
+                                    <td class="pt-4">215415</td>
+                                    <td class="pt-4">Due</td>
+                                    <td class="pt-4 text-yellow-600">Pending</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">Oppo F7</td>
+                                    <td class="pt-4">2342325</td>
+                                    <td class="pt-4">Paid</td>
+                                    <td class="pt-4">Delivered</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">MacBook Pro 2020</td>
+                                    <td class="pt-4">544125</td>
+                                    <td class="pt-4">Refunded</td>
+                                    <td class="pt-4 text-red-600">Declined</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                                <tr class="border-b-2">
+                                    <td class="pt-4">Ipad Mini 2018 </td>
+                                    <td class="pt-4">215415</td>
+                                    <td class="pt-4">Due</td>
+                                    <td class="pt-4 text-yellow-600">Pending</td>
+                                    <td class="pt-4"><a href="#" class="hover:text-red-500">Details</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="flex justify-center flex-row mt-4 w-auto">
+                        <a href="#" class="flex flex-row hover:text-red-500">
+                            <h1 class="font-poppins text-sm font-semibold">Load More</h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+    
+    
+            </div>
+            <div class="w-3/12 h-screen bg-slate-200 font-poppins">
+                <div class="flex flex-row justify-end pr-4 w-full">
+                    <label for="check" class="ml-4 bg-cyan-500 cursor-pointer relative w-12 flex flex-row h-6 rounded-lg mt-9 mr-4" id="toggle">
+                        <input type="checkbox" id="check" class="sr-only peer"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                        </svg>
+                        <span class="w-6 h-6 bg-white absolute rounded-lg peer-checked:bg-slate-800 peer-checked:left-6" >
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd" />
+                        </svg>
+                    </label>
+                    <div class="flex flex-row mt-8">
+                        <div class="flex flex-col">
+                            <h1 class="text-xs font-light"> Hii, <span class="text-xs font-semibold"> Benni</span></h1>
+                            <h2 class="text-xs font-light">Admin</h2>
+                        </div>
+                        <img src="/img/user4.jpg" class="w-8 h-8 rounded-full ml-4 object-cover border border-cyan-500">
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="font-poppins font-semibold text-lg ml-4">Recent Updates</h1>
+                    <div class="bg-white w-auto mx-4 h-auto rounded-lg drop-shadow-lg">
+                        <div class="flex flex-row my-4 mx-4">
+                            <img src="/img/user1.jpg" class="w-8 h-8 rounded-full">
+                            <div class="flex flex-col mx-2">
+                                <h1 class="text-cyan-500 text-xs font-semibold">Benni <span class="text-black text-xs font-normal"> received his order of Macbook Pro 2020 </span></h1>
+                                <h2 class="font-poppins text-xs font-light mt-4 text-slate-500 italic">23 Minutes Ago</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-row my-4 mx-4">
+                            <img src="/img/user2.jpg" class="w-8 h-8 rounded-full">
+                            <div class="flex flex-col mx-2">
+                                <h1 class="text-cyan-500 text-xs font-semibold">Tono <span class="text-black text-xs font-normal"> decline his order of DJI Mavic Air 2 </span></h1>
+                                <h2 class="font-poppins text-xs font-light mt-4 text-slate-500 italic">1 Minutes Ago</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-row my-4 mx-4">
+                            <img src="/img/user4.jpg" class="w-8 h-8 rounded-full">
+                            <div class="flex flex-col mx-2">
+                                <h1 class="text-cyan-500 text-xs font-semibold">Andi <span class="text-black text-xs font-normal"> received his order of Oppo F7 </span></h1>
+                                <h2 class="font-poppins text-xs font-light mt-4 text-slate-500 italic">4 Hours Ago</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col font-poppins" id="sales">
+                    <h1 class="font-poppins font-semibold text-lg ml-4 mt-8">Sales Analytics</h1>
+                    <div class="flex flex-col mx-4" id="parentSales">
+                        <div class="bg-white flex flex-row w-auto rounded-lg drop-shadow-lg p-4 mb-4" id="online">
+                            <div class="bg-purple-600 h-10 w-10 rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col mx-4">
+                                <h1 class="text-sm font-semibold mb-2">Online Orders</h1>
+                                <h2 class="text-xs">Last 24 Hours</h2>
+                            </div>
+                            <h1 class="text-lime-500 font-semibold text-sm">+39%</h1>
+                            <h1 class=" font-semibold text-sm ml-4">1300</h1>
+                        </div>
+                        <div class="bg-white flex flex-row w-auto  rounded-lg drop-shadow-lg p-4 mb-4" id="offline">
+                            <div class="bg-orange-600 h-10 w-10 rounded-full flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div class="flex flex-col mx-4">
+                                <h1 class="text-sm font-semibold mb-2">Offline Orders</h1>
+                                <h2 class="text-xs">Last 24 Hours</h2>
+                            </div>
+                            <h1 class="text-red-500 font-semibold text-sm">-17%</h1>
+                            <h1 class=" font-semibold text-sm ml-4">800</h1>
+                        </div>
+                        <div id="contain1">
+                            <div class="bg-white flex flex-row w-auto rounded-lg drop-shadow-lg p-4 mb-4" id="customer">
+                                <div class="  bg-purple-600 h-10 w-10 rounded-full flex justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z" />
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col mx-4">
+                                    <h1 class=" text-sm font-semibold mb-2">New Customer</h1>
+                                    <h2 class="text-xs">Last 24 Hours</h2>
+                                </div>
+                                <h1 class="text-lime-500 font-semibold text-sm">+23%</h1>
+                                <h1 class=" font-semibold text-sm ml-4">941</h1>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-white flex flex-row w-auto mx-4 rounded-lg drop-shadow-lg p-4 justify-center items-center mb-4 cursor-pointer hover:bg-cyan-500 hover:text-white" id="buttonTambah">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                        </svg>
+                        <h1 class="ml-2 ">Add Product</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+<script src="script.js"></script>
+</body>
+</html>

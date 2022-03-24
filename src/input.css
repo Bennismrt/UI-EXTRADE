@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.track {
+    stroke: none;
+    fill: none;
+}
+
+.progress {
+    fill: none;
+    stroke: rgb(10, 201, 201);
+    stroke-width: 8px;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 90;
+}
+.progress2 {
+    fill: none;
+    stroke: rgb(10, 201, 201);
+    stroke-width: 8px;
+    stroke-dasharray: 246;
+    stroke-dashoffset: 90;
+}
+.progress3 {
+    fill: none;
+    stroke: rgb(10, 201, 201);
+    stroke-width: 8px;
+    stroke-dasharray: 116;
+    /* stroke-dashoffset: 60; */
+}
+
+.divutama {
+    /* bg-white flex flex-row w-auto rounded-lg drop-shadow-lg p-4 mb-4" */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px;
+    margin-bottom: 14px;
+}
+
+.divutama .anakpertama{
+    /* bg-purple-600 h-10 w-10 rounded-full flex justify-center items-center */
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anakkedua {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    /* background-color: aqua; */
+}
+
+.anakkedua .anakkeduasub1 {
+    /* text-sm font-semibold mb-2 */
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    /* color: orangered; */
+}
+
+.anakkedua .anakkeduasub2 {
+    /* text-lime-500 font-semibold text-sm */
+    font-size: 8px;
+}
+.divutama .textbaru1 {
+    /* text-lime-500 font-semibold text-sm */
+    color: #27c727e0;
+    font-weight: bold;
+    font-size: 5rem;
+    padding-right: 15px;
+    padding-left: -12px;
+    /* background-color: orangered; */
+}
+.divutama .textbaru2{
+    /* font-semibold text-sm ml-4 */
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 4rem;
+}
